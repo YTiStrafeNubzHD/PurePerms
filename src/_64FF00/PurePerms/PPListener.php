@@ -59,7 +59,7 @@ class PPListener implements Listener
 
         $player = $event->getEntity();
         if($player instanceof Player) {
-            $this->plugin->updatePermissions($player, $event->getTarget()->getName());
+            $this->plugin->updatePermissions($player, $event->getTarget()->getDisplayName());
         }
     }
 
